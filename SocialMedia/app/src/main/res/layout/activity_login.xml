@@ -12,7 +12,7 @@
     android:id="@+id/autentificacion_textview"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Autentification"
+    android:text="@string/autentificacion"
     android:textSize="30dp"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="15dp"/>
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="@string/email"
             android:textSize="20dp"/>
         <EditText
         android:id="@+id/LoginMail"
@@ -37,11 +37,11 @@
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="122dp"
-        android:hint="Email"/>
+        android:hint="@string/email"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="@string/password"
             android:textSize="20dp"/>
 
         <EditText
@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="Password"
+            android:hint="@string/password"
             />
     </LinearLayout>
     <Button
@@ -57,7 +57,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter"
+        android:text="@string/enter"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"/>
 

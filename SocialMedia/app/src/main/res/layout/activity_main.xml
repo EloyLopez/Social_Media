@@ -8,8 +8,8 @@
     tools:context="edu.lasalle.ppro2.socialmedia.activities.MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/image_social"
         android:layout_centerInParent="true"/>
     <TextView
@@ -17,7 +17,7 @@
         android:id="@+id/text_social"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Social media"
+        android:text="@string/splash"
         android:layout_centerInParent="true" />
 
 </RelativeLayout>

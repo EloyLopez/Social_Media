@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SocialMedia</string>
+    <string name="splash">Social media network</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter">Enter</string>
+    <string name="autentificacion">Autentification</string>
 </resources>
