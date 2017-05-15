@@ -5,4 +5,7 @@
     <string name="password">Password</string>
     <string name="enter">Enter</string>
     <string name="autentificacion">Autentification</string>
+    <string name="add">Add user</string>
+    <string name="list">User list</string>
+    <string name="exit">Exit</string>
 </resources>
