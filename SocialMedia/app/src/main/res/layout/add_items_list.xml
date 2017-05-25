@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <ImageView
+        android:id="@+id/listview_cell_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/listview_cell_image"
+        android:layout_toEndOf="@id/listview_cell_image"
+        android:textSize="10sp"/>
+
+
+
+    <TextView
+        android:layout_alignEnd="@id/text_name"
+        android:id="@+id/text_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"/>
+    <TextView
+        android:layout_alignStart="@id/text_name"
+        android:layout_below="@id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_age"
+        android:textSize="10sp"/>
+    <Button
+        android:id="@+id/button_ver"
+        android:layout_below="@+id/text_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_surname"
+        android:id="@+id/image_friend"
+        android:src="@mipmap/ic_launcher"
+        android:layout_toStartOf="@+id/button_ver" />
+
+</RelativeLayout>

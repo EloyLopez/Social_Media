@@ -6,12 +6,13 @@
     <string name="enter">Enter</string>
     <string name="autentificacion">Autentification</string>
     <string name="add">Add user</string>
-    <string name="list">User list</string>
+    <string name="list">Users list</string>
     <string name="exit">Exit</string>
     <string name="name">Name</string>
     <string name="surname">Surname</string>
     <string name="date">BirthDate (dd/mm/yyyy)</string>
     <string name="studies">Studies</string>
+    <string name="users">User</string>
     <string-array name="spinner">
         <item>Gender</item>
         <item>Male</item>
