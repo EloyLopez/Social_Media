@@ -75,6 +75,16 @@ public class UsersDB implements UsersDBRepo {
         return list;
     }
 
+    @Override
+    public void update(String name,String surname,int value){
+        DatabaseHelper helper = DatabaseHelper.getInstance(context);
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_FRIENDS,value);
+        String whereClause = COLUMN_NAME + "=? and " + COLUMN_SURNAME + "=?";
+        String[] whereArgs = {name, surname};
+        helper.getWritableDatabase().update(TABLE_NAME, values, whereClause, whereArgs);
+    }
+
 
 }
 

@@ -12,7 +12,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/image_add"
-        android:src="@mipmap/ic_launcher"
+        android:src="@mipmap/ic_add"
         />
     <TextView
         android:layout_marginLeft="30dp"
@@ -27,7 +27,7 @@
         android:layout_height="100dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="60dp"
-        android:src="@mipmap/ic_launcher"
+        android:src="@mipmap/ic_list"
         android:layout_alignParentRight="true"
         android:id="@+id/image_list"/>
     <TextView
@@ -43,7 +43,7 @@
         android:onClick="exit_click"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"
+        android:src="@mipmap/ic_exit"
         android:layout_marginTop="46dp"
         android:id="@+id/image_exit"
         android:layout_below="@+id/text_list"

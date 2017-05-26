@@ -11,4 +11,5 @@ import edu.lasalle.ppro2.socialmedia.model.User;
 public interface UsersDBRepo {
     void addUser(User u);
    List<User> getAllusers();
+    void update(String name, String surname,int value);
 }

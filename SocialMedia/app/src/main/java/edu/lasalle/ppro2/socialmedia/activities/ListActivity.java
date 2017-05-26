@@ -1,9 +1,13 @@
 package edu.lasalle.ppro2.socialmedia.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,18 +23,28 @@ public class ListActivity extends AppCompatActivity {
 
     UserListViewAdapter adapter;
     UsersDBRepo usersDBRepo;
+    ListView listView;
+    List<User> user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        List<User> user=new ArrayList<>();
+        user=new ArrayList<>();
         usersDBRepo=new UsersDB(this);
         user.addAll(usersDBRepo.getAllusers());
         adapter=new UserListViewAdapter(user,this);
-        ListView listView = (ListView) findViewById(R.id.listView);
+         listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(adapter);
         getSupportActionBar().hide();
 
 
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+       user.clear();
+        user=usersDBRepo.getAllusers();
+        adapter.refresh(user);
     }
 }
