@@ -58,6 +58,8 @@ public class UserListViewAdapter extends BaseAdapter {
         name.setText(user.getName());
         TextView surname=(TextView) view.findViewById(R.id.text_surname);
         surname.setText(user.getSurname());
+       TextView age=(TextView) view.findViewById(R.id.text_age);
+        age.setText(user.getBirthdate());
         ImageView friend=(ImageView) view.findViewById(R.id.image_friend);
         int friend_val=user.getFriend();
         if(friend_val==0)

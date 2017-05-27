@@ -22,7 +22,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/ic_friend"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -98,7 +98,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_friend"
         android:layout_alignParentBottom="true"
-        android:text="amigo"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"/>
 

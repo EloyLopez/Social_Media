@@ -13,6 +13,10 @@
     <string name="date">BirthDate (dd/mm/yyyy)</string>
     <string name="studies">Studies</string>
     <string name="users">User</string>
+    <string name="user_add">User Added</string>
+    <string name="not_friend">Is not my friend</string>
+    <string name="as_friend">+ Mark as a friend</string>
+    <string name="add_friend">Is my friend</string>
     <string-array name="spinner">
         <item>Gender</item>
         <item>Male</item>

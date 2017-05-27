@@ -28,8 +28,16 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(isValidEmail(mail.getText().toString())!=false){
                     if(password.getText().toString().length()>=6) {
-                        Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
-                        startActivity(intent);
+                        if(mail.getText().toString().equals("admin@salleurl.edu"))
+                        {
+                            if(password.getText().toString().equals("qwerty"))
+                            {
+                                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                                startActivity(intent);
+                                reset();
+                            }
+                        }
+
                     }
                 }
 
@@ -46,7 +54,11 @@ public class LoginActivity extends AppCompatActivity {
             return android.util.Patterns.EMAIL_ADDRESS.matcher(target).matches();
         }
     }
+    private void reset() {
+        password.setText("");
+        mail.setText("");
 
+    }
 
 
 }

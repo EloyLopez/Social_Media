@@ -39,6 +39,9 @@ public class ListActivity extends AppCompatActivity {
 
 
     }
+    public void back_toolBar(View view){
+        onBackPressed();
+    }
 
     @Override
     public void onResume(){

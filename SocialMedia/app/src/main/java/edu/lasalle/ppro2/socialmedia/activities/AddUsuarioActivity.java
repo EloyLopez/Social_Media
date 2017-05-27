@@ -1,11 +1,13 @@
 package edu.lasalle.ppro2.socialmedia.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import edu.lasalle.ppro2.socialmedia.R;
 import edu.lasalle.ppro2.socialmedia.Repositories.UsersDBRepo;
@@ -35,19 +37,28 @@ public class AddUsuarioActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                User user=new User(name.getText().toString(),surname.getText().toString(),gender.getSelectedItem().toString(),
-                        studies.getText().toString(),date.getText().toString(),0);
-                usersDBRepo.addUser(user);
-            }
-        });
 
     }
 
-
+    public void AddUser(View view)
+    {
+        User user=new User(name.getText().toString(),surname.getText().toString(),gender.getSelectedItem().toString(),
+                date.getText().toString(), studies.getText().toString(),0);
+        usersDBRepo.addUser(user);
+        reset();
+        Toast.makeText(this,getResources().getString(R.string.user_add),Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(AddUsuarioActivity.this,ListActivity.class);
+        startActivity(intent);
+    }
     public void back_toolBar(View view){
         onBackPressed();
+    }
+    private void reset() {
+        name.setText("");
+        surname.setText("");
+        studies.setText("");
+        date.setText("");
+        gender.setSelection(0);
+
     }
 }
